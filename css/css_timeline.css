@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box
+}
+
+.kronologi {
+    position: relative;
+
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #000
+}
+
+.kronologi::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff9f55;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+
+}
+
+.isi {
+    padding: 10px 40px;
+    background-color: inherit;
+    /* background-color: ;inherit; */
+    width: 50%;
+    position: relative;
+}
+
+.isi::after {
+    content: "🕚";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    background-color: #fff;
+    border: 4px solid #ff9f55;
+    top: 17px;
+    border-radius: 50%;
+    z-index: 1
+}
+
+.kiri {
+
+    left: 0;
+
+}
+
+.kanan {
+
+    left: 50%;
+}
+
+
+.kanan:nth-child(n+1),
+.kiri:nth-child(n+1) {
+    margin-top: -300px;
+}
+
+
+
+.kiri:nth-child(1) {
+    margin-top: 0px;
+
+}
+
+.kanan:nth-child(1) {
+
+    top: 0px;
+    margin-top: 0px;
+
+}
+
+
+
+.kiri::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 17px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #fff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(250, 234, 8)
+}
+
+.kanan::before {
+    content: "";
+
+    height: 0;
+    position: absolute;
+    top: 17px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(250, 234, 8) transparent transparent
+}
+
+.kanan::after {
+    left: 0px;
+
+}
+
+.konten {
+    padding: 20px 30px;
+    background-color: rgb(250, 234, 8);
+    position: relative;
+    border-radius: 6px;
+
+}
+
+@media screen and (max-width:600px) {
+    .kronologi::after {
+        left: 31px
+    }
+
+    .isi {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        position: relative;
+
+    }
+
+    .isi::before {
+
+        left: 45px;
+        border: medium solid rgb(94, 255, 0);
+        border-width: 10px 10px 10px 0px;
+        border-color: transparent rgb(0, 0, 0) transparent transparent
+    }
+
+    .kanan::after,
+    .kiri::after {
+        left: 15px
+    }
+
+    .kanan {
+        left: 0;
+    }
+
+    .kanan:nth-child(n+1),
+    .kiri:nth-child(n+1) {
+        margin-top: 0px;
+    }
+
+
+
+
+
+}
+
+.w3-sidebar {
+
+    z-index: 3 !important
+}

@@ -1,0 +1,91 @@
+[
+    {
+        "namaversi": "PWA2021_V.1",
+        "tanggal": "30 Juli 2021",
+        "ket": [
+            "Update versi PWA (Progressive Webb Application) di semua fitur",
+            "Penambahan fitur Info (informasi update dari setiap perubahan)",
+            "Perbaikan fitur akses materi siswa (materi bisa diakses berdasarkan pengaturan waktu awal sampai waktu akhir)",
+            "Perbaikan Absen bantu bagi guru kelas dan guru mapel",
+            "Perbaikan Fitur Tambah Siswa",
+            "Perubahan template LJK pada siswa",
+            "Perubahan fitur preview gambar yang akan diunggah",
+            "Perbaikan url konten materi sekolah lain",
+            "Perbaikan Fitur pendeteksian opsi PILIHAN GANDA TIPE C (opsi A, B, dan C) pada editor kunci jawaban",
+            "Perbaikan elemen pada tampilan elamaso siswa"
+        ],
+        "video": []
+    },
+    {
+        "namaversi": "PWA2021_V.1.1",
+        "tanggal": "3-Agustus 2021",
+        "ket": [
+            "Memperbaiki sistem Cookies pada elamaso siswa",
+            "Memperbaiki sistem BANTU ISI pada elamaso guru",
+            "Memparbaiki sistem Bantu Absen pada elamaso guru"
+        ],
+        "video": []
+    },
+    {
+        "namaversi": "PWA2021_V.1.2",
+        "tanggal": "4 Agustus 2021",
+        "ket": [
+            "Memperbaiki siswa gagal unggah poto absen elamaso siswa",
+            "Memperbaiki sistem BANTU ISI pada elamaso guru"
+        ],
+        "video": []
+    },
+    {
+        "namaversi": "PWA2021_V.1.3",
+        "tanggal": "7 Agustus 2021",
+        "ket": [
+            "Mengoptimasi PWA",
+            "Penambahan Dashboard nama sekolah di laman utama dan elamaso Siswa",
+            "Pengaktifan nilai keterampilan (KI-4)",
+            "Mengoptimasi pilihan Penilaian Akhir Semester",
+            "Menghapus menu Raport untuk Guru Mata Pelajaran",
+            "Memperbaiki keterangan kalender pada rekap absen",
+            "Memperbaiki respon ketika siswa gagal unggah poto absen",
+            "Memperbaiki sistem penyimpanan poto siswa di server",
+            "Mengubah tampilan Timeline Materi",
+            "Mengubah sistem EDIT AKSES Materi",
+            "Memperbaiki sistem SIMPAN DRAFT",
+            "Perubahan teks tombol UPLOAD JAWABAN NO menjadi UPLOAD MEDIA NO pada SOAL ESSAY",
+            "Mengoptimasi perubahan pembuatan konten materi",
+            "Mengoptimasi sistem REKAM LAYAR (Ketika SCREEN LAYAR terpilih, langsung merekam)",
+            "Mengubah sistem upgrade dengan pembuatan versi kode server"
+        ],
+        "video": []
+    },
+    {
+        "namaversi": "PWA2021_V.1.4",
+        "tanggal": "17 Agustus 2021",
+        "ket": [
+            "Mengoptimasi fitur elamaso kepala sekolah dan staff",
+            "Memperbaiki formulir ajuan di elamaso guru (mendeteksi siapa yang akan menyetujui usulan perubahan data)",
+            "Memperbaiki tampilan preview upload gambar",
+            "Menambahkan fitur GALERI",
+            "Menambahkan fitur Administrasi Surat untuk elamaso Staff dan kepala sekolah",
+            "Tahap beta fitur Google Meet",
+            "Penambahan fitur PROFIL SEKOLAH untuk elamaso Staff dan Kepala Sekolah",
+            "Menambahkan kriteria pencarian nama siswa dengan kriteria '<>' untuk kriteria 'bukan' atau 'selainnya'"
+        ],
+        "video": []
+    },
+    {
+        "namaversi": "PWA2021_V.1.5",
+        "tanggal": "20 Agustus 2021",
+        "ket": [
+            "Mengaktifkan fitur Google Meet",
+            "Menambahkan alternatif cara absen bagi siswa yang perangkat HP-nya mengalami permasalahan memori penuh",
+            "Mengubah sistem upload galery dengan lebih dari satu gambar sekali kirim",
+            "Mengubah paramater filter konten materi di elamaso (kini berdasarkan idbaris materi dan token siswa)",
+            "Kini mengubah Identitas materi di tengah-tengah proses KBM berlangsung tidak mempengaruhi hasil pekerjaan siswa yang sudah mengerjakan sebelum mengubah identitas materinya (Data Nilai tidak akan hilang meski Identitas materinay diedit)",
+            "Memperbaiki kode COPY KODE karena Ketentuan w3.org telah men-depricated (usang) kode copy untuk web browser terbaru",
+            "Mempersingkat resume USULAN PERUBAHAN DATA"
+            
+        ],
+        "video": []
+    }
+
+]

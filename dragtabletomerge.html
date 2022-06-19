@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr,td {border:.5pt solid black}
+    </style>
+</head>
+<body>
+    
+    <button id="mergeBtn">MERGEEEEE</button>
+    <button id="domsel">DOOM</button>
+    <button class="button">Moszila</button>
+    <table id="table">
+        <tr>
+
+
+            <td>tess</td>
+            <td>tess</td>  <td>tess</td>
+            <td>tess</td>
+        </tr><tr>
+            <td>tess</td>
+            <td>tess</td>
+            <td>tess</td>
+            <td>tess</td>
+        </tr><tr>
+            <td>tess</td>
+            <td>tess</td>
+            <td>tess</td>
+            <td>tess</td>
+        </tr>
+    </table>
+    <div> ini ada a[pa</div>
+    <div> ini lagi </div>
+    <script>
+
+let button = document.querySelector('.button');
+
+button.addEventListener('click', function () {
+  let selection = window.getSelection();
+  let strongs = document.getElementsByTagName('td');
+console.log(selection.rangeCount)
+  if (selection.rangeCount > 0) {
+    //selection.removeAllRanges();
+  }
+
+  strongs[0].setAttribute("class","selected");
+  for (let i = 0; i < strongs.length; i++) {
+    let range = document.createRange();
+    range.selectNode(strongs[i])
+    strongs[i].setAttribute("class","selected");
+    
+    selection.addRange(range);
+    
+  }
+});
+
+
+
+    document.getElementById("domsel").onclick = function(){
+        let sel = document.getSelection();
+    //console.log(sel.rangeCount);
+    let selrange = sel.getRangeAt(0);
+   
+    
+    let selectiondom = selrange.cloneContents();
+    let t = selectiondom.querySelectorAll("tr");
+    for(i=0 ; i < t.length ; i++ ){
+        console.log(t[i])
+    }
+    console.log("t");
+
+    //selrange.setAttribute("class","selected");//.children;//.querySelectorAll("td");
+    
+    // for(i=0; i < dom.length ; i++){
+    //     //dom[i].childNodes.setAttribute("class","selected")
+    //     dom[i].setAttribute("class","selected")
+    //     console.log(dom[i])
+    // }
+
+    }
+            document.getElementById('mergeBtn').onclick = merge;
+            // function onCellClick(e){
+            // var targ = (window.event) ? window.event.srcElement : e.target;
+            // if (3===targ.nodeType) {
+            // targ = targ.parentNode;
+            // }
+            //     var isSelected = targ.className.indexOf('selected') >= 0;
+                    
+            //     if (!isSelected) targ.className =  'selected';    
+            //     else targ.className = '';        
+            //     isSelected = !isSelected;        
+            // }
+
+            //document.getElementById('table').addEventListener('click', onCellClick, false );
+
+            function merge() {
+   
+    //selrange.setAttribute("class","selected")
+
+            var rows = document.getElementById('table').rows;
+                for (var i = 0, ii = rows.length; i < ii; i++) {
+                for (var j = 0, jj = rows[i].cells.length; j < jj; j++) {
+                if (rows[i].cells[j].className.indexOf('selected') >= 0) {
+                    if (rows[i].cells[j+1].className.indexOf('selected') >= 0) mergeRow(i,j);
+                } else if (rows[i+1].cells[j].className.indexOf('selected') >= 0) mergeCol(i,j);
+                    }
+                }
+            }
+
+            function mergeRow(i,j) {
+            var r = document.getElementById('table').rows[i];
+            var c = r.cells[j+1].innerHTML;
+            r.cells[j].innerHTML += c;
+            var n = r.cells[j].getAttribute('colspan') || 1;
+            r.cells[j].setAttribute('colspan',n+=1);
+            r.deleteCell(j+1);
+            r.cells[j].className = '';
+            
+            }
+            function mergeCol(i,j) {
+            var t = document.getElementById('table');
+            var c = t.rows[i+1].cells[j].innerHTML;
+            t.rows[i].cells[j].innerHTML += c;
+            var n = r.cells[j].getAttribute('rowspan') || 1;
+            t.rows[i].cells[j].setAttribute('rowspan', n+=1);
+            t.rows[i+1].deleteCell(j);
+            t.rows[i].cells[j].className = '';
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+21 Agustus
+UJI COBA COPY exeCommand
+- /css/firstyle.css -- hapus style textarea
+- /statis/guru.js -- replace
+- /statis/siswa.js ---udah tadi
+
+- /user/guru.html -- pindahin div textarea
+- /user/gmp.html -- pindahin div textarea
+
+
+
+
+20 Agustus
+- /img/image-icon.png
+- /img/pdf-icon.png
+
+- /statis/gk.js
+- /statis/gmp.js
+- /statis/guru.js
+- /statis/kepsek.js
+- /statis/staff.js
+- /statis/update.json
+
+- /user/gmp.html
+- /user/guru.html
+- /user/kepsek.html
+- /user/siswa.html
+- /user/staff.html
+
+
+
+7 Agustus - 9 Agustus
+
+* Gambar
+- arsipsurat.png
+- galeri.jpg
+- studio.png
+- icons >> 44png (upgrade)
+
+* css
+- /css/stylegurukelas.css
+
+* folder USER
+- /user/kepsek.html
+- /user/staff.html
+- /usr/siswa.html
+- /user/guru.html
+- /user/gmp.html
+
+* folder STATIS
+- /statis/staff.js
+- /statis/kepsek.js
+- /statis/update.json
+- /statis/siswa.js
+
+* folder main
+- /sw.js (asset ditambah)
+
+* Google Script
+- akreditasi Kepala Sekolah
+
+
+
+
+4 agustus - 7 Agustus
+skrip yang diubah besar-besaran:
+- /statis/gk.js
+- /statis/guru.js
+- /statis/gmp.js
+- /statis/siswa.js
+- /statis/main.js
+- /statis/app.js
+- /sw.js
+- /statis/update.json
+
++ /img/NO+GAGAL.png
+
+- /css/css_timeline.css
+- /css/stylegurukelas
+
+- /user/guru.html
+- /user/gmp.html
+- /index.html
+
+
+- mengatasi siswa gagal absen pad siswa.js
+html ubah width pada guru.html dan gmp.html
+
+
+
+
+
+3 agustus 2021
+perbaikan Bantu Isi
+
+30 Juli
+- gk.js
+- siswa.js
+- timekbm.js
+- update.json'
+- gmp.html
+- guru.html
+- sw.js

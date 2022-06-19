@@ -1,0 +1,159 @@
+/* textarea{width:100%;height:200px;padding:12px 20px;margin:8px 0;display:inline-block;border:1px solid #ccc;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif} */
+button.login{background-color:#00f}button.wa{background-color:#4caf50}button.login,button.wa{color:#fff;padding:14px 20px;margin:8px 0;border:none;cursor:pointer;width:100%;border-radius:30px}button.wa:hover{opacity:.8}.cancelbtn{width:auto;padding:10px 18px;background-color:#f44336}.imgcontainer{text-align:center;margin:24px 0 12px 0;position:relative}img.avatar{width:40%;border-radius:50%}.container{padding:16px;border:2px double red;border:30px;padding:5px}span.psw{float:right;padding-top:16px}.modal{display:none;position:fixed;z-index:3;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.514);padding-top:30px}.modal-petunjuk{width:90%}.modal-content{width:80%}.modal-contenta{width:65%}.modal-content,.modal-contenta,.modal-petunjuk{background-color:#fefefe;margin:1% auto 0 auto;border:1px solid #888}.modal-contentt{background-color:#fefefe;margin:0 auto 0 auto;width:80%}.close{position:absolute;right:25px;top:0;color:#000;font-size:35px;font-weight:700}.close:focus,.close:hover{color:red;cursor:pointer}.animate{-webkit-animation:animatezoom .6s;animation:animatezoom .6s}@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)}to{-webkit-transform:scale(1)}}@keyframes animatezoom{from{transform:scale(0)}to{transform:scale(1)}}@media screen and (max-width:300px){span.psw{display:block;float:none}.cancelbtn{width:100%}}#tombolregistrasi{display:none}
+.w3-margin8{margin:8px!important;padding:10px;}
+.bgradialgradian {background-image: linear-gradient(145deg, #d9b3ff , #ffffcc,#b3ffb3)}
+.hero { 
+    position: relative; 
+    
+    display: flex;
+    background-image: url("/img/bgwa.png");
+    background-size: cover;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+}
+.hero::after {background-color: white;}
+.tesbody{background: rgb(255, 255, 255) url("/img/hero-bg.png") repeat }
+/* .tesbody{background: rgb(255, 255, 255) url("/img/hero-bg.png") repeat } */
+/* .tesbody{background: rgb(208, 221, 250) url("/img/bgwa2.png") repeat } */
+/* .tesbody{background: rgba(250, 244, 164, 0.6) url("/img/lg_bg.png") repeat } */
+    /* background-image: url(/img/bgwa.png);background-repeat: repeat; background-color: #faf4a4} */
+    
+.n_zoom:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  };
+  .loaderin {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spinx 2s linear infinite;
+  }
+  
+  @keyframes spinx {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .warnaeka{background-color:rgb(208, 221, 250)}
+  .warnaeka2{background-color:rgb(115, 158, 252)}
+
+  
+.bgimg {
+  opacity: 0.3;
+  background-image: url('https://s.yimg.com/ny/api/res/1.2/0ExUTXyIhpSNisBHUcoTRw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MC42MjQwNzEzMjI0MzY5/https://s.yimg.com/uu/api/res/1.2/WYJ6axvAqttGL2ue_t4QWQ--~B/aD0zNzk7dz02NzM7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/id/liputan6_hosted_772/32be6a6ce44568caaa03d7185ce36e98');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+
+
+}
+.bgimg2 {
+  background-image: url('/img/hero-bg.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat:repeat
+
+}
+
+.container2 {
+  position: relative;
+  /* max-width: 800px; Maximum width */
+  margin: 0 auto;
+  /* Center it */
+}
+
+.container2 .content2 {
+  position: absolute;
+  /* Position the background text */
+  bottom: -15;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
+  width: 100%;
+  /* Full width */
+  padding: 20 px;
+  /* Some padding */
+  text-align: center;
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+.garis td,
+.garis th,
+.garis tr {
+  border: .5pt solid #000
+}
+
+.garis th {
+  border: .5pt solid #000;
+  text-align: center;
+  vertical-align: middle
+}
